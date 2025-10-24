@@ -2,7 +2,7 @@ group 'com.uhg0.ar_flutter_plugin_2'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.9.10'
+    ext.kotlin_version = '2.2.20'
     repositories {
         mavenLocal()
         google()
@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.3.2'
+        classpath 'com.android.tools.build:gradle:8.13.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -27,7 +27,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdk 34
+    compileSdk 36
     namespace 'com.uhg0.ar_flutter_plugin_2'
 
     compileOptions {
@@ -45,12 +45,12 @@ android {
 
     defaultConfig {
         minSdkVersion 28
-        targetSdkVersion 34
+        targetSdkVersion 36
     }
 }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'io.github.sceneview:arsceneview:2.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'io.github.sceneview:arsceneview:2.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
 }
